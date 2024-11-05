@@ -44,3 +44,4 @@ Contributions are welcome! Please submit a pull request for any improvements or 
 - [Spotify API](https://developer.spotify.com/)
 - [TensorFlow](https://www.tensorflow.org/)
 - [For the SpotiPy page](https://levelup.gitconnected.com/how-to-build-a-music-recommendation-system-with-python-and-spotify-api-using-streamlit-5488d316aabd)
+- [for the SpotifyAPI class](https://towardsdatascience.com/how-to-utilize-spotifys-api-and-create-a-user-interface-in-streamlit-5d8820db95d5)
