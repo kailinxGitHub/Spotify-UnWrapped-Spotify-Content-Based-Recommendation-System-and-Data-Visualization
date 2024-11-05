@@ -40,7 +40,7 @@ Contributions are welcome! Please submit a pull request for any improvements or 
 ---
 
 ## Acknowledgments
-<!-- i want this to be bulletpints -->
 - [Top 100 Spotify Songs History](https://www.kaggle.com/code/varunsaikanuri/spotify-data-visualization/input)
 - [Spotify API](https://developer.spotify.com/)
 - [TensorFlow](https://www.tensorflow.org/)
+- [For the SpotiPy page](https://levelup.gitconnected.com/how-to-build-a-music-recommendation-system-with-python-and-spotify-api-using-streamlit-5488d316aabd)

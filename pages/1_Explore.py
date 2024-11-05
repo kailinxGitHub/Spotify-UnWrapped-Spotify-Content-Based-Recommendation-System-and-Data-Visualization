@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 from components.top_100_table import top_100_table, top_100_plotly_chart, top_100_treemap, top_100_over_time
 from datetime import timedelta
 

@@ -32,7 +32,7 @@ The application is built with a Taipy or Streamlit GUI for an interactive and us
 - **Home**: The Welcoming Page
 - **Explore**: Explore global music trends and statistics.
 - **User Profile**: Log in with your Spotify account to view your personal listening stats.
-- **Recommendations**: Discover new music tailored to your taste based on song features.
+- **SpotiPy Recommendations**: Using the SpotiPy and Spotify API to get personalized music recommendations based on your listening history.
 '''
 
 st.markdown(contentFromReadme)

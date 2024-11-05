@@ -18,8 +18,8 @@ def top_100_treemap():
     top_100 = top_100_table()
     fig = px.treemap(top_100, path=['artist', 'title'], values='streams',
                  title="Regional Popularity of Top 100 Songs by Artist and Song")
-    fig.update_layout(margin=dict(t=50, l=25, r=25, b=25))
-    st.plotly_chart(fig)
+    # fig.update_layout(margin=dict(t=50, l=25, r=25, b=25))
+    # st.plotly_chart(fig)
     
 def top_100_over_time():
     top_100 = top_100_table()
