@@ -17,23 +17,19 @@ client_id = os.getenv("SPOTIPY_CLIENT_ID")
 client_secret = os.getenv("SPOTIPY_CLIENT_SECRET")
 redirect_uri = os.getenv("SPOTIPY_REDIRECT_URI")
 
-# Spotipy
+# get artist songs from spotify api
 def spotipy_get():
     Types_of_Features = (
         "acousticness", 
-        "analysis_url", 
         "danceability", 
         "duration_ms", 
         "energy", 
-        "id", 
         "instrumentalness", 
-        "key", 
+        "mode",
         "liveness", 
         "loudness", 
-        "mode", 
         "speechiness", 
         "tempo", 
-        "time_signature", 
         "valence"
     )
 
@@ -61,16 +57,14 @@ def spotipy_get():
             st.session_state.data = data
             save_recommendations_to_file(TEMP_FILE_PATH, data)
         
-    if 'data' in st.session_state:
+    if 'data' in st.session_state and st.session_state.data:
+        st.write(f"Here are some tracks for you based on the artist {artist_name}:")
         Name_of_Feat = st.selectbox("Feature", Types_of_Features)
         categorize = st.button("Categorize")
         if categorize:
-            st.session_state.data = spotify.categorize(st.session_state.data, Name_of_Feat)
+            spotipy_categorize(st.session_state.data, Name_of_Feat)  
 
-    if 'data' in st.session_state and st.session_state.data:
-        st.write(f"Here are some tracks for you based on the artist {artist_name}:")
-        spotipy_categorize(st.session_state.data, Name_of_Feat)        
-
+# get the categorization of the data
 def spotipy_categorize(data, Name_of_Feat):
     need = []
     for i, item in enumerate(data['tracks']['items']):
@@ -109,8 +103,10 @@ def spotipy_categorize(data, Name_of_Feat):
     df = df[["Index", "Feature", "Popularity", "Song Name", "Artist", "Track", "Release Date"]]
     df.sort_values(by="Feature", inplace=True, ascending=False)
     
+    df_dict = df.to_dict(orient='records')
+    save_recommendations_to_file(TEMP_FILE_PATH, df_dict)
+    
     feat_header = Name_of_Feat.capitalize()
-
     st.header(f'{feat_header} vs. Popularity')
 
     fig = px.scatter(
