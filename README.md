@@ -13,7 +13,9 @@ This is a web application that provides users with personalized Spotify music re
 
 - **Frontend**: Streamlit for an interactive and responsive user interface.
 - **Machine Learning**: TensorFlow for building a content-based recommendation model.
-- **Backend**: Spotify API (via Spotipy) for accessing music data and user-specific information.
+- **Backend**: 
+    - **APIs**: Spotify API for collecting user listening data.
+    - **Visualization**: plotly for interactive visualizations.
 - **Data Visualization**: Matplotlib, Seaborn, and Pandas for statistical visualization.
 
 ## Setup
@@ -38,5 +40,7 @@ Contributions are welcome! Please submit a pull request for any improvements or 
 ---
 
 ## Acknowledgments
-
-Special thanks to the [Spotify API](https://developer.spotify.com/) and the [TensorFlow](https://www.tensorflow.org/) community for making this project possible.
+<!-- i want this to be bulletpints -->
+- [Top 100 Spotify Songs History](https://www.kaggle.com/code/varunsaikanuri/spotify-data-visualization/input)
+- [Spotify API](https://developer.spotify.com/)
+- [TensorFlow](https://www.tensorflow.org/)

@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(
     page_title="Spotify UnWrapped", 
     page_icon=":musical_note:", 
-    layout="wide"
+    layout="centered"
 )
 
 st.write("# Welcome to Spotify UnWrapped! 👋")
