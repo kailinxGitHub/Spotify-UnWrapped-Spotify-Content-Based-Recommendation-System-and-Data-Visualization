@@ -26,7 +26,7 @@ The application is built with a Taipy or Streamlit GUI for an interactive and us
 
 ### Tech Stack
 - **Frontend**: Streamlit for an interactive and responsive user interface.
-- **Machine Learning**: TensorFlow for building a content-based recommendation model.
+- **Machine Learning**: Perceptron for building a content-based recommendation model.
 - **Backend**: Spotify API (via Spotipy) for accessing music data and user-specific information.
 - **Data Visualization**: Matplotlib, Seaborn, and Pandas for statistical visualization.
 
