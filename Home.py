@@ -1,5 +1,6 @@
 import streamlit as st
 
+# configures the page
 st.set_page_config(
     page_title="Spotify UnWrapped", 
     page_icon=":musical_note:", 
@@ -7,6 +8,7 @@ st.set_page_config(
 )
 
 st.write("# Welcome to Spotify UnWrapped! 👋")
+st.image("./items/Spotify.png")
 
 contentFromReadme = '''
 - **LinkedIn**: [Kailin Xing](https://www.linkedin.com/in/kailinx/)
@@ -31,8 +33,9 @@ The application is built with a Taipy or Streamlit GUI for an interactive and us
 ### Usage
 - **Home**: The Welcoming Page
 - **Explore**: Explore global music trends and statistics.
-- **User Profile**: Log in with your Spotify account to view your personal listening stats.
+- **PlayList Recommendation**: Gets the recommendations for the playlist you provide.
 - **SpotiPy Recommendations**: Using the SpotiPy and Spotify API to get personalized music recommendations based on your listening history.
+- **Artist Analysis**: Analyze the music of your favorite artist based on features.
 '''
 
 st.markdown(contentFromReadme)

@@ -98,4 +98,3 @@ class SpotifyAPI(object):
         query_params = urlencode({"q": query, "type": search_type.lower(), "limit": limit})
         print(query_params)
         return self.base_search(query_params)
-    

@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+# the table for top 100
 def top_100_table():
     df = pd.read_csv("data/top100.csv")
     df.to_parquet("large_file.parquet")
@@ -9,18 +10,19 @@ def top_100_table():
     df = df[["title", "artist", "streams", "date", "url"]]
     return df
 
+# the chart for top 100
 def top_100_plotly_chart():
     top_100 = top_100_table()
     fig = px.bar(top_100.head(10), x='title', y='streams', color='artist', title='Top 10 Streamed Songs')
     st.plotly_chart(fig)
 
+# the treemap for top 100
 def top_100_treemap():
     top_100 = top_100_table()
     fig = px.treemap(top_100, path=['artist', 'title'], values='streams',
                  title="Regional Popularity of Top 100 Songs by Artist and Song")
-    # fig.update_layout(margin=dict(t=50, l=25, r=25, b=25))
-    # st.plotly_chart(fig)
     
+# the top 100 over time functionality in streamlit
 def top_100_over_time():
     top_100 = top_100_table()
     top_100['date'] = pd.to_datetime(top_100['date'], format="%Y-%m-%d")
