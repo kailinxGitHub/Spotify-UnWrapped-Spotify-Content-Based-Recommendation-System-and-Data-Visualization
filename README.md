@@ -20,6 +20,16 @@ This is a web application that provides users with personalized Spotify music re
 - **Data Visualization**: Matplotlib, Seaborn, and Pandas for statistical visualization.
 
 ## Setup
+<!-- start with conda environment from yml -->
+1. Clone the repository
+```git clone https://github.com/kailinxGitHub/Spotify-UnWrapped-Spotify-Content-Based-Recommendation-System-and-Data-Visualization.git```
+2. Conda environment
+```conda env create -f environment.yml```
+3. Activate the environment
+```conda activate SpotifyUnWrapped```
+4. Run the Streamlit application
+```streamlit run app.py```
+5. Open the Streamlit app in your browser at `http://localhost:8501`
 
 ## Usage
 
