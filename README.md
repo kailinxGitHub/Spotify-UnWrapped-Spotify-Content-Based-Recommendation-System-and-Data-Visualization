@@ -3,6 +3,9 @@
 
 This is a web application that provides users with personalized Spotify music recommendations based on their listening history and music preferences. Using a combination of TensorFlow for machine learning and the Spotify API for data collection, the Streamlit application displays engaging visualizations of popular and user-specific music trends. The application is built with a Taipy or Streamlit GUI for an interactive and user-friendly experience.
 
+## Demo
+https://github.com/user-attachments/assets/81fc10a7-6f98-4ed4-a0d3-7b8e58d87ba5
+
 ## Features
 
 - **Global Spotify Statistics**: View the most-streamed songs, trending artists, and popular albums.
