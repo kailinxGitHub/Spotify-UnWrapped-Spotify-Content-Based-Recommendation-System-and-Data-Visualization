@@ -26,13 +26,25 @@ https://github.com/user-attachments/assets/81fc10a7-6f98-4ed4-a0d3-7b8e58d87ba5
 <!-- start with conda environment from yml -->
 1. Clone the repository
 ```git clone https://github.com/kailinxGitHub/Spotify-UnWrapped-Spotify-Content-Based-Recommendation-System-and-Data-Visualization.git```
-2. Conda environment
+2. Create a `.env` file in the root directory with the following Spotify API credentials:
+```
+SPOTIPY_CLIENT_ID='your_client_id'
+SPOTIPY_CLIENT_SECRET='your_client_secret'
+SPOTIPY_REDIRECT_URI='http://localhost:8501'
+```
+You can obtain these credentials by:
+1. Going to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
+2. Creating a new application
+3. Copying the Client ID and Client Secret
+4. Adding `http://localhost:8501` to the Redirect URIs in your app settings
+
+3. Conda environment
 ```conda env create -f environment.yml```
-3. Activate the environment
+4. Activate the environment
 ```conda activate SpotifyUnWrapped```
-4. Run the Streamlit application
+5. Run the Streamlit application
 ```streamlit run app.py```
-5. Open the Streamlit app in your browser at `http://localhost:8501`
+6. Open the Streamlit app in your browser at `http://localhost:8501`
 
 ## Usage
 
