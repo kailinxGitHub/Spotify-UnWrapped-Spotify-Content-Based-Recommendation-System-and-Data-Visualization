@@ -1,5 +1,5 @@
 # Spotify Content-Based Recommendation System and Data Visualization
-<img src="items/Spotify.png" alt="Logo" width="200"/>
+<img src="https://raw.githubusercontent.com/kailinxGitHub/Spotify-UnWrapped-Spotify-Content-Based-Recommendation-System-and-Data-Visualization/main/items/Spotify.png" alt="Logo" width="200"/>
 
 This is a web application that provides users with personalized Spotify music recommendations based on their listening history and music preferences. Using a combination of TensorFlow for machine learning and the Spotify API for data collection, the Streamlit application displays engaging visualizations of popular and user-specific music trends. The application is built with a Taipy or Streamlit GUI for an interactive and user-friendly experience.
 
