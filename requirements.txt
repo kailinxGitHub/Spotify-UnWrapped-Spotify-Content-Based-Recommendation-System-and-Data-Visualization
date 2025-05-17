@@ -64,7 +64,7 @@ pydeck=0.9.1=pypi_0
 pygments=2.18.0=pyhd8ed1ab_0
 python=3.13.0=h4862095_100_cp313
 python-dateutil=2.9.0.post0=pyhff2d567_0
-python-dotenv=1.0.1=pypi_0
+python-dotenv
 python_abi=3.13=0_cp313
 pytz=2024.2=pypi_0
 pyzmq=25.1.2=py313h313beb8_0
